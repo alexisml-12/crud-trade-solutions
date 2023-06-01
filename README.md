@@ -28,9 +28,14 @@ composer install
 php artisan key:generate
 ```
 
-* Por último, generar las migraciones correspondientes para crear las tablas necesarias en la base de datos. Ejecutar el siguiente comando:
+* Antes de finalizar se debe generar las migraciones correspondientes para crear las tablas necesarias en la base de datos. Ejecutar el siguiente comando:
 
 ```
 php artisan migrate
 ```
+* Por último, para habilitar la visualización de las imágenes almacenadas en el proyecto, debemos ejecutar el siguiente comando:
+```
+php artisan key:generate
+```
+
 Una vez completados estos pasos, el proyecto estará instalado y listo para su uso.
