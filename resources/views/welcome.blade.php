@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/646ac4fad6.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <a href="{{route("crud.products")}}">Ir a productos</a>
     <h1 class="text-center p-3">Tiendas</h1>
 
     @if (session("add"))
@@ -48,11 +49,11 @@
                     @csrf
                     <div class="mb-3">
                         <label for="nameInput" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nameInput" name="txtname">
+                        <input type="text" class="form-control" id="nameInput" name="txtname" required>
                     </div>
                     <div class="mb-3">
                         <label for="fechaInput" class="form-label">Fecha de apertura</label>
-                        <input type="date" class="form-control" id="fechaInput" name="txtfecha">
+                        <input type="date" class="form-control" id="fechaInput" name="txtfecha" required>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
