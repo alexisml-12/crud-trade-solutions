@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('imagen');
             $table->tinyInteger('delete_producto')->default(0);
 
-            $table->foreign('tienda')->references('id')->on('tienda_table')->onDelete('cascade');
+            $table->foreign('tienda')->references('id')->on('tienda')->onDelete('cascade');
         });
     }
 
