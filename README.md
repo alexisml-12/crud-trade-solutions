@@ -35,7 +35,7 @@ php artisan migrate
 ```
 * Por último, para habilitar la visualización de las imágenes almacenadas en el proyecto, debemos ejecutar el siguiente comando:
 ```
-php artisan key:generate
+php artisan storage:link
 ```
 
 Una vez completados estos pasos, el proyecto estará instalado y listo para su uso.
